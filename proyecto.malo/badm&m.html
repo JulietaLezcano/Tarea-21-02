@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="Stylesheet" href="badm&m.css">
+        <title>Major or minor</title>
+    </head>
+
+<body>
+        <div id="contenedor">
+        <div id="cabecera">
+          <h1> < o > </h1>
+        <div id="principal">
+          <div id="izquierda">
+            <h3>A d i v i n a n d o</h3>
+            <ul>
+              <li><a href="https://a.wattpad.com/cover/59027156-352-k890291.jpg">Click aca para jugar!</a></li>
+              <li><a href="#">Follow me</a></li>
+
+            </ul>
+            <p style="font-style: italic;">Bienvenidx, queremos saber mas sobre vos, por favor completa el formulario para acceder al juego</p>
+          </div>
+          <div id="central">
+     
+          
+            <h2>Formulario</h2>
+        <form id="miformulario" class="formulario" action="">
+          <p>
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="user" value="" />
+          </p>
+          <p>
+            <label for="email">Tu email</label>
+            <input type="text" id="emailaddress" value="" />
+          </p>
+          <p>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+          </p>
+          <p>
+            <label for="comentarios">Sexo:</label>
+            Femenino  <input type="radio" name="sex" /> 
+            Masculino <input type="radio" name="sex" />
+            No me identifico con ninguno de los anteriores <input type="radio" name="sex" /><br />
+          </p>
+          <p>
+            <label for="comentarios">Color preferido:</label>
+            <input type="checkbox" name="color" /> Rojo<br />
+            <input type="checkbox" name="color" class="threepxfix" /> Verde <br />
+            <input type="checkbox" name="color" class="threepxfix" /> Azul <br />
+            <input type="checkbox" name="color" class="threepxfix" /> Me gustan todos <br/>
+          </p>
+          <p>
+            <label for="terms">De una, acepto los términos</label>
+            <input type="checkbox" id="terms" class="boxes" />
+            <label for="terms">Mmm mejor consulto con mi abogadx</label>
+            <input type="checkbox" id="terms" class="boxes" />
+          </p>
+        <div id="botones">
+          <input type="submit" value="Ya estamo!" /> 
+          <input type="reset" value="Vamo de nuevo" />
+        </div>
+</form>
+     
+          </div>
+        </div>
+        <div class="header">
+          <h1>MAYOR O MENOR</h1>
+      </div>
+      
+      <h3>Elija un numero entre 0 y 100</h3>
+      <select id="select--prediccion" style="background-color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"; onchange="mostrarPrediccion()">
+          <option value="Major">Mayor o igual</option>
+          <option value="Minor">Menor</option>
+      </select>
+      <p id= "prediccion">Prediccion</p>
+      <input type=num id= "input--usuarix">
+      <button onclick="interpretarInput()" style="background-color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Let's Go!</button>
+      <p id= "resultado">El numero elegido resulta:</p>
+  
+      <script>
+           function mostrarPrediccion() {
+              var x= document.getElementById("select--prediccion").value;
+              /*document.getElementById("resultado").innerHTML = x;*/
+          }
+         
+           function interpretarInput() {
+              var a = document.getElementById("input--usuarix".value);
+              var aleatorio = Math.floor(Math.random() * 101);
+              /*var aleatorio = "7";*/
+               
+              if (a => aleatorio){
+                  document.getElementById("resultado").innerHTML = "Es mayor! (o igual, no lo sabremos)";
+              } else if (a < aleatorio) {
+                  document.getElementById("resultado").innerHTML = "Es menor!";
+              } else {
+                  document.getElementById("resultado").innerHTML = "buUuUuuU";
+              }
+          }
+  
+      </script>         
+</body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/del-extracto-amarillo-fondo-rojo-azul-chill%C3%B3n-de-sqares-modelados-142513079.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: yellow;
+}
+#contenedor{
+    width: 900px;
+    margin: auto;
+    font-style: bold;
+}
+form{
+    position: relative
+    width: 740px;
+    height: 498px;
+    margin: 0 auto;
+    background: transparent;
+}
