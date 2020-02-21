@@ -1,0 +1,26 @@
+*{
+    box-sizing: content-box;
+}
+    body{
+    font-family: Impact, Haettenschweiler, sans-serifS;
+    padding: 10px;
+    background-image: url(https://smoda.elpais.com/wp-content/uploads/2016/12/cover43.jpg);
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: top center; 
+}
+header{
+    padding: 30px;
+    text-align: justify;
+    background: rosybrown;
+}
+.header h1{
+    position: relative;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+h2{
+    text-align: left;
+    font-size: 40px;
+}

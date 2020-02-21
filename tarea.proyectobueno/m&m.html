@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="StyleSheet" href="m&m.css">
+        <title>Major minor</title>
+    </head>
+
+<body>
+    <div class="header">
+        <h1>MAYOR O MENOR</h1>
+    </div>
+    <h2>Elija un numero entre 0 y 100</h2>
+    <select id="select--prediccion" style="background-color: rosybrown; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif"; onchange="mostrarPrediccion()">
+        <option value="Major">Mayor o igual</option>
+        <option value="Minor">Menor</option>
+    </select>
+    <p id= "prediccion">Prediccion</p>
+    <input type=num id= "input--usuarix">
+    <button onclick="interpretarInput()" style="background-color: rosybrown; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Let's Go!</button>
+    <p id= "resultado">El numero elegido resulta:</p>
+
+    <script>
+         function mostrarPrediccion() {
+            var x= document.getElementById("select--prediccion").value;
+            /*document.getElementById("resultado").innerHTML = x;*/
+        }
+       
+         function interpretarInput() {
+            var a = document.getElementById("input--usuarix".value);
+            var aleatorio = Math.floor(Math.random() * 101);
+            /*var aleatorio = "7";*/
+             
+            if (a => aleatorio){
+                document.getElementById("resultado").innerHTML = "Es mayor! (o igual, no lo sabremos)";
+            } else if (a < aleatorio) {
+                document.getElementById("resultado").innerHTML = "Es menor!";
+            } else {
+                document.getElementById("resultado").innerHTML = "buUuUuuU";
+            }
+        }
+
+    </script>   
+
+</body>
+</html>
